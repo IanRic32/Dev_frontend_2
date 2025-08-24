@@ -1,0 +1,96 @@
+
+.mis-categorias {
+padding: 40px;
+}
+
+.mis-categorias h2 {
+font-size: 2.5rem;
+font-family: 'Rubik Dirt', cursive; 
+margin-bottom: 40px;
+text-align: center;
+}
+
+.categorias-contenedor {
+padding-top: 20px;
+margin-bottom: 40px;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 40px;
+}
+
+.proyecto {
+position: relative;
+height: 250px; 
+border-radius: 10px;
+overflow: hidden; 
+background-size: cover;
+background-position: center;
+transition: all 0.3s ease;
+cursor: pointer;
+}
+
+.proyecto:hover {
+transform: scale(1.05);
+}
+
+.Ropa {
+background-image: url('https://i.postimg.cc/zD0fKg78/image.png');
+}
+
+.Tecnología {
+background-image: url('https://i.postimg.cc/9QHsfx9M/image.png');
+}
+
+.Decoración-y-Hogar {
+background-image: url('https://i.postimg.cc/ZRnMQ2Gf/image.png');
+}
+
+.Deportes {
+background-image: url('https://i.postimg.cc/Fs0NGkgY/image.png');
+}
+
+.overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+opacity: 0;
+transition: opacity 0.3s ease;
+text-align: center;
+}
+
+
+.proyecto:hover .overlay,
+.proyecto:active .overlay,
+.proyecto:focus .overlay {
+opacity: 1;
+}
+
+
+.Ropa .overlay {
+background-color: rgba(101, 67, 33, 0.7); 
+}
+
+.Tecnología .overlay {
+background-color: rgba(13, 110, 253, 0.7);
+}
+
+.Decoración-y-Hogar .overlay {
+background-color: rgba(214, 164, 107, 0.7); 
+}
+
+.Deportes .overlay {
+background-color: rgba(25, 135, 84, 0.7); 
+}
+
+.overlay p {
+font-size: 1.5rem;
+font-weight: bold;
+margin: 0;
+}
