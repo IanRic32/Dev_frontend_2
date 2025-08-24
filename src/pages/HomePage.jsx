@@ -1,10 +1,4 @@
-import React from 'react'
-import Footer from '../components/Footer'
+import React from 'react';
+import Footer from '../components/Footer';
+import '../styles/Home.css';
 
-function Home() {
-  return (
-    <Footer/>
-  )
-}
-
-export default Home
